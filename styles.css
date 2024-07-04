@@ -1,0 +1,196 @@
+body {
+  font-family: 'Minecraft', Arial, sans-serif;
+  background-color: #e6f3ff;
+  margin: 0;
+  padding: 0;
+  color: #2c3e50;
+}
+
+.server-list {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.community-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.server-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.server-list li {
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 10px;
+  font-size: 1.1em;
+}
+
+.button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.server-info {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#player-count {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.minigames {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.minigame-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.minigame-card {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.minigame-card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+}
+
+.join-steps {
+  list-style-type: none;
+  padding: 0;
+}
+
+.join-steps li {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.join-steps li strong {
+  color: #2c3e50;
+}
+
+.disclaimer {
+  flex-shrink: 0;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+  width: 100%;
+  opacity: 1;
+  transition: background-color 0.3s ease, border-top 0.3s ease, opacity 0.3s ease;
+  /* Transition for smooth fade-in */
+}
+
+.disclaimer p {
+  margin: 0;
+}
+
+.disclaimer:hover {
+  background-color: #f8f8f8;
+  /* Hover background color */
+  border-top: 1px solid #ddd;
+  /* Hover border color */
+  opacity: 1;
+}
+
+
+.tagline {
+  font-size: 2em;
+  color: #3498db;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.bloxblast {
+  background: linear-gradient(to right, #ff0000, #ffa500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.snowflake {
+  position: fixed;
+  top: -10px;
+  color: transparent;
+  background: linear-gradient(to bottom, #ffffff, #87CEEB);
+  -webkit-background-clip: text;
+  background-clip: text;
+  user-select: none;
+  pointer-events: none;
+  z-index: 9999;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
